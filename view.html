@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question View!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src='script.js'></script>
+    <meta http-equiv="refresh" content="10"/>
+
+</head>
+<body onload='loadQuestions()'>
+    <div class='container-fluid'>
+        <div style='margin: 0 auto; width: 70%'> 
+        <p class='display-1' style='text-align: center;'>Question View - 2XL</p> <br>
+
+        <b id='questionslen'></b>
+        <div id='questions'></div>
+        
+        </div>
+    </div>
+
+    <style>
+    html {
+        height: 100%;
+    }
+    body {
+        color: #E3CCBD;
+        background-image: linear-gradient(to bottom right, #112F3B, #2B7379, #6BBAB5);
+        height: 100%;
+    }
+
+    button {
+        background-color: #E3CCBD
+    }
+    </style>
+</body>
+</html>

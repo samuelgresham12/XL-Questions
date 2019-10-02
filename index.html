@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ask a Question!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src='script.js'></script>
+
+</head>
+<body>
+    <div class='container-fluid'>
+        <div style='margin: 0 auto; width: 50%'> 
+        <p class='display-1' style='text-align: center;'>Questions - 2XL</p> <br>
+
+        <p>What's your name?</p><input type="text" class='form-control' placeholder="Name (optional)" id='name'> <br>
+        <p>What's your question?</p><textarea placeholder="What's your question?" id="question" cols="30" rows="5" class='form-control' ></textarea> <br>
+
+        <p>What session/activity does this relate to?</p>
+        <select class='form-control' id='session'>
+            <option value='1'>Session 1 - Light and Dark</option>
+            <option value='2'>Session 2 - Perseverance</option>
+            <option value='3'>Session 3 - Identity and Belonging</option>
+            <option value='4'>Session 4 - Love</option>
+            <option value='odd'>Other - Group Discussions / Devotions</option>
+            <option value='oo'>Other - Something Else</option>
+        </select> <br>
+
+        <button class='btn btn-light' style='width: 100%;' onclick='submitQuestion()'>Submit my Question!</button>
+        </div>
+    </div>
+
+    <style>
+    html {
+        height: 100%;
+    }
+    body {
+        color: #E3CCBD;
+        background-image: linear-gradient(to bottom right, #112F3B, #2B7379, #6BBAB5);
+        height: 100%;
+    }
+
+    button {
+        background-color: #E3CCBD
+    }
+    </style>
+</body>
+</html>
