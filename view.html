@@ -10,13 +10,25 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src='script.js'></script>
-    <meta http-equiv="refresh" content="10"/>
+    <script src='loadscript.js'></script>
+    <link rel="icon" 
+      type="image/png" 
+      href="XL Logo Transparent.png">
 
 </head>
 <body onload='loadQuestions()'>
     <div class='container-fluid'>
         <div style='margin: 0 auto; width: 70%'> 
-        <p class='display-1' style='text-align: center;'>Question View - 2XL</p> <br>
+        <p class='display-1' style='text-align: center;'>Question View - 2XL</p> <br> 
+        <select class='form-control' id='selectedFilter'>
+            <option value="0">Show Questions From All Subcategories</option>
+            <option value='1'>Session 1 - Light and Dark</option>
+            <option value='2'>Session 2 - Perseverance</option>
+            <option value='3'>Session 3 - Identity and Belonging</option>
+            <option value='4'>Session 4 - Love</option>
+            <option value='Other - Group Discussions / Devotions'>Other - Group Discussions / Devotions</option>
+            <option value='Other - Something Else'>Other - Something Else</option>
+        </select> <br>
 
         <b id='questionslen'></b>
         <div id='questions'></div>
