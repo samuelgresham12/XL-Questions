@@ -2,17 +2,8 @@ setInterval(loadQuestions, 10000);
 
 function loadQuestions() {
     let count = 0
-    document.getElementById("questions").innerHTML = "";
     var questions = []
-    document.getElementById("questions").innerHTML = "";
-
-    let loaded = false;
-    var loadingimg = document.createElement("img");
- 
-    loadingimg.src = "loading-gif.gif";
-    var src = document.getElementById("questions");
-     
-    src.appendChild(loadingimg);
+    let loaded=false;
     
     db.collection("questions-xl").get().then(function(querySnapshot) {
         console.log(querySnapshot)
