@@ -1,4 +1,4 @@
-setInterval(loadQuestions, 10000); 
+setInterval(loadQuestions, 3000); 
 
 function loadQuestions() {
     let count = 0
@@ -93,6 +93,7 @@ function loadQuestions() {
         });
         if(loaded==false){
         document.getElementById("questionslen").innerHTML = "-- No Questions Found --"; 
+        document.getElementById("questions").innerHTML = "";
         }
         document.getElementById("questionslen").innerHTML = "There are " + count + " questions. \n"
     });
