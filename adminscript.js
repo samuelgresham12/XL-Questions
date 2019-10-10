@@ -33,7 +33,6 @@ db.collection("questions-xl").get().then(function(querySnapshot) {
             btn.style = "color: red;"
             let func = "javascript:toggle(" + count + ")"
             btn.setAttribute( "onClick", func );
-            console.log(doc.data().subQuestion);
             document.body.appendChild(btn);
             document.body.appendChild(br);
 
@@ -45,7 +44,6 @@ db.collection("questions-xl").get().then(function(querySnapshot) {
             btn.style = "color: green;"
             let func = "javascript:toggle(" + count + ")"
             btn.setAttribute( "onClick", func );
-            console.log(doc.data().subQuestion);
             document.body.appendChild(btn);
             document.body.appendChild(br);
             
@@ -61,7 +59,6 @@ function toggle(id){
     let questionContent = JSON.parse(localStorage.getItem("qContent"))[id];
     let name = JSON.parse(localStorage.getItem("name"))[id];
     let sess = JSON.parse(localStorage.getItem("session"))[id];
-    console.log(value + " " + itemId);
 
 
     switch (value){

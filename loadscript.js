@@ -6,7 +6,6 @@ function loadQuestions() {
     let loaded=false;
     
     db.collection("questions-xl").get().then(function(querySnapshot) {
-        console.log(querySnapshot)
         querySnapshot.forEach(function(doc) {
             questions.push({
                 key: doc.id,
