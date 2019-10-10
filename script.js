@@ -42,7 +42,7 @@ function upload (name, question, session){
         subName: name,
         subQuestion: question,
         subSession: session,
-        show: false
+        show: "false"
     })
     // Once the server responds, the fields are cleared and the getData() subroutine is completed
     .then(function(docRef) {
