@@ -41,7 +41,8 @@ function upload (name, question, session){
     db.collection("questions-xl").add({
         subName: name,
         subQuestion: question,
-        subSession: session
+        subSession: session,
+        show: false
     })
     // Once the server responds, the fields are cleared and the getData() subroutine is completed
     .then(function(docRef) {
