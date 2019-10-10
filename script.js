@@ -52,6 +52,9 @@ function upload (name, question, session){
             text: "Name: " + name + "\nQuestion: " + question,
             icon: "success"
         });
+        document.getElementById("question").value = "";
+        document.getElementById("name").value = "";
+
     })
     // If the server resonds with an error, this will run
     .catch(function(error) {
