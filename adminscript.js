@@ -29,7 +29,7 @@ db.collection("questions-xl").get().then(function(querySnapshot) {
         if(doc.data().show == "false"){
             var btn = document.createElement("button");
             var br = document.createElement("br");
-            btn.innerHTML = doc.data().subQuestion;
+            btn.innerHTML = doc.data().subQuestion + "->" + doc.data().subSession;
             btn.style = "color: red;"
             let func = "javascript:toggle(" + count + ")"
             btn.setAttribute( "onClick", func );
